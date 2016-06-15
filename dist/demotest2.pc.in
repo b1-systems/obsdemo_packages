@@ -1,0 +1,10 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${prefix}/@LIB_INSTALL_DIR@
+includedir=${prefix}/include/@CMAKE_PROJECT_NAME@
+
+Name: @CMAKE_PROJECT_NAME@
+Description: demo test 2
+Version: @DEMOTEST2_VERSION@
+Libs: -L${libdir} -ldemoB
+Cflags: -I${includedir}
