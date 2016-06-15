@@ -11,11 +11,13 @@
 # published by the Open Source Initiative.
 #
 
+%define src_name obsdemo_packages
+
 Name:           demotest1
 Version:        0.0.0
 Release:        5.0
 License:        GPL-2.0+
-Source:         %{name}-%{version}.tar.xz
+Source:         %{src_name}-%{version}.tar.xz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Summary:        Demo test1 package 
 Group:          B1Test
@@ -41,7 +43,7 @@ Demo test 1 package for OBS testing devel
 
 
 %prep
-%setup
+%setup -n %{src_name}-%{version}
 
 %build
 mkdir build
