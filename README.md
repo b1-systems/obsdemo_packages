@@ -5,3 +5,5 @@ The various packages are maintained in different branches of the empty master pr
 
 This is the branch for package demotest1.
 
+Tags are using prefix a for this package
+
