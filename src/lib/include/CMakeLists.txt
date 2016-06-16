@@ -1,0 +1,8 @@
+set ( DEMO_HEADERS
+    testlibC.h
+)
+
+install( FILES ${DEMO_HEADERS}
+        DESTINATION include/${CMAKE_PROJECT_NAME}
+        PERMISSIONS OWNER_READ GROUP_READ WORLD_READ
+)
