@@ -20,7 +20,8 @@ License:        GPL-2.0+
 Source:         %{src_name}-%{version}.tar.xz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Summary:        Demo test1 package 
-Group:          B1Test
+Group:          Amusements/Teaching/Other
+URL:            http://www.github.com/b1-systems/obsdemo_packages
 Vendor:         B1 Systems GmbH
 
 BuildRequires: gcc
@@ -35,8 +36,9 @@ Demo test 1 package for OBS testing
 
 %package devel
 Summary:        Demo test1 package devel
-Group:          B1Test
+Group:          Development/Libraries/Other 
 Requires:       demotest1 = %{version}-%{release}
+URL:            http://www.github.com/b1-systems/obsdemo_packages
 
 %description devel
 Demo test 1 package for OBS testing devel
